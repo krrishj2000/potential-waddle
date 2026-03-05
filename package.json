@@ -1,0 +1,10 @@
+{
+  "name": "student-delivery-network",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MVP app for anonymous student delivery request matching",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}
