@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Delivery Network</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Student Delivery Network</h1>
+      <p class="subtitle">Anonymous posting. First transporter to accept gets the task.</p>
+
+      <section class="card" id="auth-card">
+        <h2>Sign up</h2>
+        <form id="signup-form">
+          <label>
+            Name
+            <input name="name" required />
+          </label>
+          <label>
+            Phone
+            <input name="phone" required />
+          </label>
+          <label>
+            Role
+            <select name="role" required>
+              <option value="customer">Customer</option>
+              <option value="transporter">Transporter</option>
+            </select>
+          </label>
+          <button type="submit">Create account</button>
+        </form>
+      </section>
+
+      <section class="card hidden" id="customer-card">
+        <h2>Customer Panel</h2>
+        <form id="request-form">
+          <label>
+            From
+            <input name="from" required />
+          </label>
+          <label>
+            To
+            <input name="to" required />
+          </label>
+          <label>
+            Amount
+            <input type="number" min="1" name="amount" required />
+          </label>
+          <button type="submit">Post Request</button>
+        </form>
+      </section>
+
+      <section class="card hidden" id="transporter-card">
+        <h2>Transporter Panel</h2>
+        <p>Open anonymous requests:</p>
+        <div id="open-requests"></div>
+      </section>
+
+      <section class="card hidden" id="task-card">
+        <h2>Assigned Task</h2>
+        <div id="task-info"></div>
+        <h3>Private Chat</h3>
+        <div id="messages" class="messages"></div>
+        <form id="chat-form">
+          <input name="message" placeholder="Type a message" required />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <p id="status"></p>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  color: #111827;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+.container {
+  max-width: 760px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.subtitle {
+  color: #4b5563;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+input,
+select,
+button {
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  background: #1d4ed8;
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+}
+
+button:hover {
+  background: #1e40af;
+}
+
+.hidden {
+  display: none;
+}
+
+.messages {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  min-height: 80px;
+  max-height: 220px;
+  overflow-y: auto;
+  margin-bottom: 8px;
+  background: #f9fafb;
+}
+
+.message {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.open-request {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+#status {
+  color: #065f46;
+  font-weight: 600;
+}
